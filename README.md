@@ -2,6 +2,10 @@
 
 ![Hackintosh](AboutThisMac.png)
 
+### 2020/11/13 更新说明
++ 10.15.7（19H2）可OTA升级至 19H15 ，实测无任何问题，不用修改EFI。猜测：小版本的OTA应该都可以直接升级（10.15.7应该也不会有更新了）
++ 我准备守在Catalina，等11.0.6发布时再升到Big Sur
+
 ### 配置
 + OS: macOS Catalina 10.15.7 19H2 x86_64 / Macmini8,1
 + OpenCore: 0.6.2
