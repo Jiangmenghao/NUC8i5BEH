@@ -1,4 +1,4 @@
-- Version：201016
+- Version：201212
 - Maintainer：维奇(weachy)
 
 如果你想了解更多关于 NUC8ixBE 豆子峡谷黑苹果相关知识，请查阅我的文章 http://u.nu/bean
@@ -33,8 +33,12 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 1、备份出 EFI 分区中的旧版引导文件夹
 2、EFI 分区内的文件全部删除（双系统的保留 /EFI/Microsoft 文件夹），将解压出的 EFI 文件夹放入 EFI 分区
 3、迁移三码。请参考“手动迁移三码方法”或直接使用豪客开发的“三码迁移工具”。
-4、如果重启提示未找到启动项，请使用 PE 系统，修复 OpenCore 引导（可搜索“修复 Windows 系统引导”的教程作为参考）。
-5、首次进入系统前清空nvram：开机后，连续点击 ESC 键进入 OC 引导界面，按空格显示隐藏选项，执行最后一项“Reset NVRAM”，重启进入系统即可正常使用。
+4、清空NVRAM：打开 Hackintool 软件，点击顶部“NVRAM”页面，选中中间列表中的一项，点击下方的“减号”删除（首次需要输入登录密码），一项项全部删除，直至清空。
+5、重建缓存并修复权限：打开 Hackintool 软件，点击顶部“工具”页面，点击最下面一排图标的最后一个（鼠标悬浮在上面显示“重建缓存并修复权限”的便是）。此操作大约需要等待半分钟执行完毕。
+6、重启电脑。
+7、如果重启提示未找到启动项（No bootable device），请使用 PE 系统，修复 OpenCore 引导（可搜索“修复 Windows 系统引导”的教程作为参考）。
+
+这里再介绍另外一个“清空nvram”的方法：开机后，连续点击 ESC 键进入 OC 引导界面，按空格显示隐藏选项，执行最后一项“Reset NVRAM”，重启进入系统即可正常使用。
 
 
 - 手动迁移三码方法：（建议缺乏动手能力的小白用户，直接使用豪客制作的“三码迁移工具”，可到群共享下载）
@@ -64,6 +68,17 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 - Changelog：
+
+2020-12-12
+1、更新 OpenCore 0.6.4 正式版。
+2、例行升级 kext 版本（Lilu、AirportBrcmFixup、AppleALC、VirtualSMC、WhateverGreen）。
+3、增强在 macOS Big Sur 正式版的稳定性。升级到此版本强烈建议清空 nvram。
+
+
+2020-11-06
+1、更新 OpenCore 0.6.3 正式版。
+2、修复了一些在 macOS Big Sur（Beta版）上的兼容性问题，准备迎接即将到来的 11.0 正式版。
+
 
 2020-10-16
 1、更新 OpenCore 0.6.2 正式版。

@@ -1,0 +1,28 @@
+- Version：201123
+- Maintainer：weachy（维奇）
+
+如果你想了解更多关于 NUC8ixBE 豆子峡谷黑苹果相关知识，请查阅我的文章：  https://u.nu/bean
+If you want to learn more about hackintosh with Intel Bean Canyon. Please visit: https://u.nu/bean
+
+
+- nuc8豆子峡谷在线安装图文教程地址：
+
+《NUC8在线安装macOS，这才是OpenCore正确的打开方式》
+地址1: https://zhuanlan.zhihu.com/p/165608087
+地址2: https://u.nu/nuc8install
+
+
+- Changelog:
+
+2020-12-17:
+1、添加下载中的文件大小展示。增加教程链接提示。
+2、修复问题：无法下载 Big Sur 镜像的问题。
+3、修复问题：HTTP 417 错误 Expectation Failed
+
+
+2020-11-23:
+1、修复问题：制作 U 盘时选择 2 Catalina 却安装的仍下载 Big Sur 的问题。
+
+
+2020-11-16:
+1、支持 Big Sur 直接在线安装。

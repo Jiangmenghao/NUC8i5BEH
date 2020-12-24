@@ -5,7 +5,7 @@
 	<key>#Maintainer</key>
 	<string>维奇(weachy)</string>
 	<key>#Title</key>
-	<string>OpenCore-NUC8-201016</string>
+	<string>OpenCore-NUC8-201212</string>
 	<key>#Tips - CN</key>
 	<string>如果你想了解更多关于 NUC8ixBE 豆子峡谷黑苹果相关知识，请查阅我的文章 https://u.nu/bean</string>
 	<key>#Tips - EN</key>
@@ -36,6 +36,8 @@
 	<dict>
 		<key>Quirks</key>
 		<dict>
+			<key>AllowRelocationBlock</key>
+			<false/>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -239,18 +241,6 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>SMCSuperIO.kext</string>
-				<key>Comment</key>
-				<string>SuperIO sensor</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCSuperIO</string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
 				<key>Comment</key>
 				<string>Patches for NVMe SSD</string>
@@ -375,6 +365,8 @@
 			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
+			<key>ForceSecureBootScheme</key>
+			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
@@ -382,7 +374,7 @@
 			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
-			<false/>
+			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
 			<key>ThirdPartyDrives</key>
@@ -390,11 +382,21 @@
 			<key>XhciPortLimit</key>
 			<false/>
 		</dict>
+		<key>Scheme</key>
+		<dict>
+			<key>FuzzyMatch</key>
+			<false/>
+			<key>KernelArch</key>
+			<string>x86_64</string>
+			<key>KernelCache</key>
+			<string>Prelinked</string>
+		</dict>
 	</dict>
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array/>
+		<array>
+		</array>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -447,6 +449,8 @@
 			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
+			<key>BlacklistAppleUpdate</key>
+			<true/>
 			<key>BootProtect</key>
 			<string>None</string>
 			<key>DmgLoading</key>
@@ -464,7 +468,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -502,16 +506,28 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 brcmfx-country=#a</string>
+				<string>keepsyms=1 brcmfx-country=#a</string>
+				<key>run-efi-updater</key>
+				<string>No</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
-				<key>run-efi-updater</key>
-				<string>No</string>
 				<key>ocwv</key>
-				<data>IAYg</data>
+				<data>IBIS</data>
 			</dict>
+		</dict>
+		<key>Delete</key>
+		<dict>
+			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
+			<array>
+				<string>UIScale</string>
+			</array>
+			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+			<array>
+				<string>boot-args</string>
+				<string>ocwv</string>
+			</array>
 		</dict>
 		<key>WriteFlash</key>
 		<true/>
@@ -520,6 +536,8 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
+		<key>CustomMemory</key>
+		<false/>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
@@ -561,27 +579,10 @@
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
-			<false/>
+			<true/>
 			<key>MinDate</key>
 			<integer>0</integer>
 			<key>MinVersion</key>
-			<integer>0</integer>
-		</dict>
-		<key>Audio</key>
-		<dict>
-			<key>AudioCodec</key>
-			<integer>0</integer>
-			<key>AudioDevice</key>
-			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
-			<key>AudioOut</key>
-			<integer>0</integer>
-			<key>AudioSupport</key>
-			<false/>
-			<key>MinimumVolume</key>
-			<integer>20</integer>
-			<key>PlayChime</key>
-			<false/>
-			<key>VolumeAmplifier</key>
 			<integer>0</integer>
 		</dict>
 		<key>ConnectDrivers</key>
@@ -609,9 +610,9 @@
 			<key>PointerSupport</key>
 			<false/>
 			<key>PointerSupportMode</key>
-			<string>ASUS</string>
+			<string></string>
 			<key>TimerResolution</key>
-			<integer>50000</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Output</key>
 		<dict>
@@ -620,6 +621,8 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
+			<false/>
+			<key>ForceResolution</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
@@ -661,7 +664,7 @@
 			<key>AppleSecureBoot</key>
 			<false/>
 			<key>AppleSmcIo</key>
-			<false/>
+			<true/>
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>DataHub</key>
