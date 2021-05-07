@@ -8,7 +8,7 @@
 + macOS Big Sur 11.x.x
 
 ### 配置
-+ OS: macOS Catalina 10.15.7 19H524 x86_64 / Macmini8,1
++ OS: macOS Catalina 10.15.7 19H1030 x86_64 / Macmini8,1
 + OpenCore: 0.6.8
 + CPU: Intel® Core™ i5-8259U Processor (6M Cache, up to 3.80 GHz)
 + SSD: 500GB [KONKA K550](https://union-click.jd.com/jdc?e=&p=AyIGZRheHQMRBFATUhMyEgZUGloTARsHXBxZJUZNXwtEa0xHV0YXEEULWldTCQQHCllHGAdFBwtEQkQBBRxNVlQYBUkeTVxNCRNLGEF6RwtVGloUAxQEXBtSEgAieAoSDE9wdk8wYAsSQmB4LlwJXl5nQVkXaxQyEgZUGlkRAxYDVStrFQUiRTvP0JPXnoWAleDCq7zf5LCCipwiBmUbXBQBGgRUGlsSChcBZRxbHDLLmdPP9ox3dtPHmo%2B0vcSj%2FcLCpDIiN1YrayUCIgRlWTUUV0IPAB9ZFwYbDgceXxZRQgUGGw9FVxcGAhJZEAEQA2UZWhQGGw%3D%3D)
