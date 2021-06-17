@@ -35,7 +35,7 @@
 将 **EFI** 和 **NUC8_MacOnlineInstaller** 放入FAT32 U盘根目录，执行**NUC8_MacOnlineInstaller**中的run脚本，完成后使用U盘开机即可安装
 
 ### 修改三码以激活iMessage/FaceTime
-macOS系统安装完成后，请使用[Hackintool]()生成**Serial Number**, **Board Serial Number** 和 **SmUUID**，并在*config.plist*中替换它们。
+macOS系统安装完成后，请使用[Hackintool](https://github.com/headkaze/Hackintool)生成**Serial Number**, **Board Serial Number** 和 **SmUUID**，并在*config.plist*中替换它们。
 
 在[https://checkcoverage.apple.com](https://checkcoverage.apple.com)查询你的**Serial Number**，并确保查询结果如下图所示，否则继续摇号。
 
