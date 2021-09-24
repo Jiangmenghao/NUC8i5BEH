@@ -1,4 +1,4 @@
-- Version：210618
+- Version：210810
 - Maintainer：维奇(weachy)
 - 柔情似水，佳期如梦，忍顾鹊桥归路。
 
@@ -6,7 +6,8 @@
 If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean
 
 
-* 当前引导支持 Mojave、Catalina、Big Sur（10.14～11.x）。暂不考虑适配 macOS Monterey（12）开发者预览版（Beta 版），等待秋季发布正式版。有群友已尝试升级 macOS 12 Beta 版，除系统本身的 BUG 外，因 Kext 尚未适配新系统，存在部分硬件无法驱动的问题，风险自担。
+* 当前引导支持 Mojave、Catalina、Big Sur（10.14～11.x）。
+暂不考虑适配 macOS Monterey（12）开发者预览版（Beta 版），等待秋季发布正式版。有群友已尝试升级 macOS 12 Beta 版，除系统本身的 BUG 外，因 Kext 尚未适配新系统，存在部分硬件无法驱动的问题，风险自担。
 
 
 - OpenCore 实现双系统引导的说明：
@@ -24,8 +25,8 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 （2）双盘双系统的用户，无需改动两个 EFI 分区；
 
 ⚠️注意：
-1）以上配置中，双系统默认显示 OpenCore 引导界面，单系统直接显示苹果 Logo。
-2）对于双系统用户，OpenCore 引导界面已配置好倒计时，无操作则进入默认系统。可通过选中引导项按 Ctrl+Enter 将其设置为默认。看到 OC 引导界面后，任意按下方向键即可停止倒计时。
+1）以上配置中，双系统默认显示 OpenCore 引导界面，单系统直接显示苹果 Logo 进入 macOS。
+2）对于双系统用户，OpenCore 引导界面已配置好倒计时，无操作则进入默认系统。可通过选中引导项按 Ctrl+Enter 将其设置为默认系统。看到 OC 引导界面后，任意按下方向键即可停止倒计时。
 3）对于单系统用户，如希望进入 OC 引导界面（例如要进入 Recovery 模式，或要执行 Reset Nvram），只需开机后，连续点按 ESC 或 Option 键（Windows键盘的 Alt 键）即可。
 4）Recovery 模式和 Reset NVRAM 均为隐藏功能，在 OpenCore 引导界面敲击一下空格，即可出现。
 
@@ -58,15 +59,8 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 - Intel 板载 Intel Wi-Fi 驱动
-⚠️ 有很多人不断在问驱动是否完美的问题。要回答这个问题首先要定义什么是“完美”，如果将白果卡的体验定为完美，那板载网卡几乎不可能完美，如果只是满足基础上网需求，倒是算可用，因为现阶段驱动速率低、偶尔有掉驱动的问题。当前驱动是从 OpenBSD 平台的 Intel 驱动移植，只能说尽力在做适配和兼容，适合要求不高的用户。最优方案仍然是白果卡。
-考虑到板载 Wifi 驱动大佬 @zxystd 发布了 Intel Wi-Fi 驱动的正式版，简单做了集成工作，但是默认为关闭状态，自行按如下方法开启：
-
-* itlwm 版驱动（需配合 HeliPort 客户端使用）
-1、下载 itlwm 驱动（名称格式为 itlwm_驱动版本号_stable.kext.zip），地址：https://github.com/OpenIntelWireless/itlwm/releases
-2、将解压出的 itlwm.kext 放入 /EFI/OC/Kexts/ 文件夹。
-3、修改 config.plist，启用注册 itlwm.kext 的代码（搜索“itlwm.kext”，下面几行找到 <key>Enabled</key> 下一行的值 <false/> 改为 <true/>）。
-4、安装板载 Intel Wi-Fi 客户端程序 HeliPort，地址：https://github.com/OpenIntelWireless/HeliPort/releases
-5、重启电脑，运行 HeliPort 程序连接到 Wifi。按下 Option 点击菜单栏的 HeliPort，可将其设置为开机自启。
+⚠️ 有很多人不断在问驱动是否完美的问题。要回答这个问题首先要定义什么是“完美”，如果将白果卡的体验定为完美，那板载网卡几乎不可能完美，如果只是满足基础上网需求，倒是算可用，因当前驱动是从 OpenBSD 平台的 Intel 驱动移植，只能说尽力在做适配和兼容、尽量接近完美，适合要求不高的用户。最优方案仍然是白果卡。
+考虑到板载 Wifi 驱动大佬 @zxystd 发布了 Intel Wi-Fi 驱动的正式版，我在 EFI 做了集成工作，但是默认为关闭状态（因会和白果网卡冲突），如需使用自行按如下方法开启：
 
 * AirportItlwm 版驱动（无需配合 HeliPort 客户端使用）
 1、根据自己当前的 macOS 版本下载 AirportItlwm 驱动（名称格式为 AirportItlwm_驱动版本号_stable_macOS系统代号.kext.zip），地址：https://github.com/OpenIntelWireless/itlwm/releases
@@ -75,13 +69,30 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 4、修改 config.plist，搜索“IO80211Family.kext”，下面几行找到 <key>Enabled</key> 下一行的值 <false/> 改为 <true/>
 5、重启电脑。
 
+* itlwm 版驱动（需配合 HeliPort 客户端使用）
+1、下载 itlwm 驱动（名称格式为 itlwm_驱动版本号_stable.kext.zip），地址：https://github.com/OpenIntelWireless/itlwm/releases
+2、将解压出的 itlwm.kext 放入 /EFI/OC/Kexts/ 文件夹。
+3、修改 config.plist，启用注册 itlwm.kext 的代码（搜索“itlwm.kext”，下面几行找到 <key>Enabled</key> 下一行的值 <false/> 改为 <true/>）。
+4、安装板载 Intel Wi-Fi 客户端程序 HeliPort，地址：https://github.com/OpenIntelWireless/HeliPort/releases
+5、重启电脑，运行 HeliPort 程序连接到 Wifi。按下 Option 点击菜单栏的 HeliPort，可将其设置为开机自启。
 
-- 开启读卡器驱动（仅适用于未硬改用户）
+
+- 开启读卡器驱动（仅适用于【未硬改白果网卡】用户）
 1、修改 config.plist，搜索“Sdcard”，下方找到 <key>Enabled</key> 下一行的值 <false/> 改为 <true/>，即表示启用
 2、重启电脑。
 
 
+
 - 更新日志（Changelog）：
+
+2021-08-10
+1、更新 OpenCore 0.7.2 正式版。
+2、例行升级 kext 版本（AppleALC、Lilu、VirtualSMC、WhateverGreen）。
+
+2021-07-10
+1、更新 OpenCore 0.7.1 正式版。
+2、例行升级 kext 版本（AirportBrcmFixup、AppleALC、CPUFriend、IntelMausi、Lilu、NVMeFix、RestrictEvents、VirtualSMC、WhateverGreen）。
+3、目前不建议升级测试版 macOS 12 Monterey，如您执意尝试，请先禁用 FakePCIID.kext。
 
 2021-06-18
 1、更新 OpenCore 0.7.0 正式版。
