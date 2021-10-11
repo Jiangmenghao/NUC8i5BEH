@@ -1,4 +1,4 @@
-- Version：210810
+- Version：210921
 - Maintainer：维奇(weachy)
 - 柔情似水，佳期如梦，忍顾鹊桥归路。
 
@@ -78,16 +78,25 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 - 开启读卡器驱动（仅适用于【未硬改白果网卡】用户）
-1、修改 config.plist，搜索“Sdcard”，下方找到 <key>Enabled</key> 下一行的值 <false/> 改为 <true/>，即表示启用
+1、修改 config.plist，搜索“CardReader”（将会找到两处），分别在两处下方找到 <key>Enabled</key> 下一行的值 <false/> 改为 <true/>，即表示启用
 2、重启电脑。
 
 
 
 - 更新日志（Changelog）：
 
+2021-09-21
+1、修复 OpenCore 选择系统界面变为文字版的问题。
+
+2021-09-17
+1、更新 OpenCore 0.7.3 正式版。
+2、例行升级 kext 版本（AppleALC、Lilu、RestrictEvents、VirtualSMC、WhateverGreen）。
+3、（已硬改的请忽略本条）集成新版读卡器驱动（RealtekCardReader.kext、RealtekCardReaderFriend.kext），默认禁用，自行开启。
+
 2021-08-10
 1、更新 OpenCore 0.7.2 正式版。
 2、例行升级 kext 版本（AppleALC、Lilu、VirtualSMC、WhateverGreen）。
+3、（仅适用极客和强迫症用户）为兼容 10.15 Catalina、10.14 Mojave 等版本，config 配置文件中已将 MinDate、MinVersion 设置为 -1。如果你是 macOS Big Sur 以上版本可将两个值设置为 0 以增强安全性（再次强调，仅适用于极客和强迫症，日常使用无区别）。
 
 2021-07-10
 1、更新 OpenCore 0.7.1 正式版。
