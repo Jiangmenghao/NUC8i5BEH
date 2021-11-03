@@ -1,4 +1,4 @@
-- Version：210921
+- Version：211025
 - Maintainer：维奇(weachy)
 - 柔情似水，佳期如梦，忍顾鹊桥归路。
 
@@ -84,6 +84,15 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 - 更新日志（Changelog）：
+
+2021-10-25
+1、为 macOS 12（Monterey）做准备。
+（1）停用仿冒驱动 FakePCIID。
+（2）Intel 蓝牙用户，请在升级前启用 BlueToolFixup.kext，白果卡无需理会。
+
+2021-10-12
+1、更新 OpenCore 0.7.4 正式版。
+2、例行升级 kext 版本（AppleALC、RestrictEvents、WhateverGreen）。
 
 2021-09-21
 1、修复 OpenCore 选择系统界面变为文字版的问题。
