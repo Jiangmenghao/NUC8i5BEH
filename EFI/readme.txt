@@ -1,4 +1,4 @@
-- Version：211025
+- Version：211103
 - Maintainer：维奇(weachy)
 - 柔情似水，佳期如梦，忍顾鹊桥归路。
 
@@ -6,8 +6,7 @@
 If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean
 
 
-* 当前引导支持 Mojave、Catalina、Big Sur（10.14～11.x）。
-暂不考虑适配 macOS Monterey（12）开发者预览版（Beta 版），等待秋季发布正式版。有群友已尝试升级 macOS 12 Beta 版，除系统本身的 BUG 外，因 Kext 尚未适配新系统，存在部分硬件无法驱动的问题，风险自担。
+* 当前引导支持 Mojave、Catalina、Big Sur、Monterey（10.14～12.x）。
 
 
 - OpenCore 实现双系统引导的说明：
@@ -44,7 +43,7 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 三码的配置名在 Clover 和 OpenCore 略有区别，对应关系如下：
 	BoardSerialNumber 或 MLB	-> MLB
 			    ROM	-> ROM
-	  	   SerialNumber -> SystemSerialNumber
+	  	   SerialNumber	-> SystemSerialNumber
     		     CustomUUID	-> SystemUUID
 使用文本编辑器分别打开上一步中备份的 Clover 的 config.plist，以及 OpenCore 的 config.plist 配置文件。将以上四个值复制到对应字段的下一行，注意复制时要包含“值类型定义”一起复制替换（“<>”的部分），例如 Clover 中如下配置：
 <key>ROM</key>
@@ -53,9 +52,8 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 - Intel 板载蓝牙驱动
-⚠️ 目前最优方案仍然是白果卡蓝牙，目前板载蓝牙默认不支持 Sniff 模式，会增加蓝牙外设耗电量，另外有不少蓝牙鼠标连接不上。
-我整理了豆子峡谷专用的 intel 板载蓝牙驱动（兼容 10.13 以上系统），可同时兼容 OpenCore 与 Clover，请到群共享中获取“intel板载蓝牙驱动_for_OC&Clover”。
-⚠️ 由于 OpenCore 的变化，板载驱动默认为禁用状态，请参考下面“更新日志”部分 2020-10-16 的更新内容修改为启用。
+⚠️ 目前最优方案仍然是白果卡蓝牙，目前板载蓝牙默认不支持 Sniff 模式，会增加蓝牙外设耗电量，另外有不少蓝牙鼠标无法连接使用。
+考虑到 Intel 蓝牙对于小白使用不太友好，尤其 macOS Monterey 与早先系统的大改，我整合了豆子峡谷专用的 intel 板载蓝牙驱动包（兼容 10.14 以上系统），请到群共享或面包多平台链接中获取“intel板载蓝牙驱动_for_豆子”。
 
 
 - Intel 板载 Intel Wi-Fi 驱动
@@ -84,6 +82,11 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 - 更新日志（Changelog）：
+
+2021-11-03
+1、更新 OpenCore 0.7.5 正式版。
+2、例行升级 kext 版本（AppleALC、Lilu、WhateverGreen），更新驱动 HfsPlus.efi。
+3、简化 Intel 板载蓝牙用户的配置难度，制作 Intel 板载蓝牙驱动包。
 
 2021-10-25
 1、为 macOS 12（Monterey）做准备。
