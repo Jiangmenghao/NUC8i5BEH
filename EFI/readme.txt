@@ -1,4 +1,4 @@
-- Version：211103
+- Version：211208
 - Maintainer：维奇(weachy)
 - 柔情似水，佳期如梦，忍顾鹊桥归路。
 
@@ -11,14 +11,10 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 - OpenCore 实现双系统引导的说明：
 1、Windows 建议直接用 UEFI 模式安装（⚠️无需 Bootcamp 安装，⚠️不支持 MBR 传统引导模式）。
-2、内置了四套 plist 配置文件，区别如下：
- 单系统：
-  config.plist：默认配置文件，适配 4k 分辨率的显示器
-  config-1080p.plist：默认配置文件，适配低于 4k 分辨率的显示器
- 双系统：
-  config-双系统.plist：适配 4k 分辨率的显示器
-  config-双系统-1080p.plist：适配低于 4k 分辨率的显示器
-请选择适合自己的 plist，重命名为 config.plist 并覆盖 /EFI/OC/config.plist 文件
+2、内置了两套 plist 配置文件，区别如下：
+  config.plist：默认配置文件，适配单系统
+  config-双系统.plist：适配双系统
+如您是双系统用户，请删除默认的 config.plist，并将 config-双系统.plist 重命名为 config.plist 即可。
 3、准备工作：
 （1）单盘双系统用户需将 Windows 引导的 /EFI/Microsoft 文件夹备份，然后清空 EFI 分区，放入 EFI-OC-XXXXXX.zip 解压得到的 EFI 文件夹，将备份的 /EFI/Microsoft 文件夹与 OC 引导合并（即 EFI 下有 Boot、OC、Microsoft 三个文件夹）；
 （2）双盘双系统的用户，无需改动两个 EFI 分区；
@@ -82,6 +78,11 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 - 更新日志（Changelog）：
+
+2021-12-08
+1、更新 OpenCore 0.7.6 正式版。
+2、例行升级 kext 版本（AppleALC、Lilu、VirtualSMC）。
+3、适配 OC 对 UIScale（HiDPI）的调整。
 
 2021-11-03
 1、更新 OpenCore 0.7.5 正式版。
