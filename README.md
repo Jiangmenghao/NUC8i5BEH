@@ -8,10 +8,10 @@ English | [简体中文](./README-zh_CN.md)
 + macOS Mojave 10.14.6
 + macOS Catalina 10.15.7
 + macOS Big Sur 11.6.1
-+ macOS Monterey 12.0.1（which I'm using now）
++ macOS Monterey 12.1（which I'm using now）
 
 ### Config
-+ OS: macOS Monterey 12.0.1 21A559 x86_64 / Macmini8,1
++ OS: macOS Monterey 12.1 21C52 x86_64 / Macmini8,1
 + OpenCore: 0.7.6
 + CPU: Intel® Core™ i5-8259U Processor (6M Cache, up to 3.80 GHz)
 + SSD: 500GB [KONKA K550](https://union-click.jd.com/jdc?e=&p=AyIGZRheHQMRBFATUhMyEgZUGloTARsHXBxZJUZNXwtEa0xHV0YXEEULWldTCQQHCllHGAdFBwtEQkQBBRxNVlQYBUkeTVxNCRNLGEF6RwtVGloUAxQEXBtSEgAieAoSDE9wdk8wYAsSQmB4LlwJXl5nQVkXaxQyEgZUGlkRAxYDVStrFQUiRTvP0JPXnoWAleDCq7zf5LCCipwiBmUbXBQBGgRUGlsSChcBZRxbHDLLmdPP9ox3dtPHmo%2B0vcSj%2FcLCpDIiN1YrayUCIgRlWTUUV0IPAB9ZFwYbDgceXxZRQgUGGw9FVxcGAhJZEAEQA2UZWhQGGw%3D%3D)

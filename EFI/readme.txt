@@ -1,5 +1,5 @@
-- Version：211208
-- Maintainer：维奇(weachy)
+- Version：211216
+- Maintainer：维奇(weachy) [https://github.com/weachy]
 - 柔情似水，佳期如梦，忍顾鹊桥归路。
 
 如果你想了解更多关于 NUC8ixBE 豆子峡谷黑苹果相关知识，请查阅我的文章 https://u.nu/bean
@@ -78,6 +78,9 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 - 更新日志（Changelog）：
+
+2021-12-16
+1、解决无法检测到 macOS 12.1 更新的问题。
 
 2021-12-08
 1、更新 OpenCore 0.7.6 正式版。
