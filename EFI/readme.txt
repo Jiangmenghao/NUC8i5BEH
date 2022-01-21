@@ -1,5 +1,5 @@
-- Version：211216
-- Maintainer：维奇(weachy) [https://github.com/weachy]
+- Version：220113
+- Maintainer：维奇(weachy)
 - 柔情似水，佳期如梦，忍顾鹊桥归路。
 
 如果你想了解更多关于 NUC8ixBE 豆子峡谷黑苹果相关知识，请查阅我的文章 https://u.nu/bean
@@ -30,9 +30,8 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 1、备份出 EFI 分区中的旧版引导文件夹
 2、EFI 分区内的文件全部删除（双系统的保留 /EFI/Microsoft 文件夹），将解压出的 EFI 文件夹放入 EFI 分区
 3、迁移三码。请参考“手动迁移三码方法”或直接使用豪客开发的“三码迁移工具”。
-4、重建缓存并修复权限：打开 Hackintool 软件，点击顶部“工具”页面，点击最下面一排图标的最后一个（鼠标悬浮在上面显示“重建缓存并修复权限”的便是）。此操作大约需要等待半分钟执行完毕。
-5、重启电脑并清空NVRAM：电脑启动时，连续按 ESC 键进入 OC 引导界面，按一次空格键出现隐藏选项，选择最后一个“Reset NVRAM”回车执行，电脑会自动重启进入系统。
-6、如果重启提示未找到启动项（No bootable device），请使用 PE 系统，修复 OpenCore 引导（使用 easyUEFI、Bootice 等软件，具体操作可搜索“修复 Windows 系统引导”的教程作为参考）。
+4、重启电脑并清空NVRAM：电脑启动时，连续按 ESC 键进入 OC 引导界面，按一次空格键出现隐藏选项，选择最后一个“Reset NVRAM”回车执行，电脑会自动重启进入系统。
+5、如果重启提示未找到启动项（No bootable device），请使用 PE 系统，修复 OpenCore 引导（使用 easyUEFI、Bootice 等软件，具体操作可搜索“修复 Windows 系统引导”的教程作为参考）。
 
 
 - 手动迁移三码方法：（建议缺乏动手能力的小白用户，直接使用豪客制作的“三码迁移工具”，可到群共享下载）
@@ -56,19 +55,11 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 ⚠️ 有很多人不断在问驱动是否完美的问题。要回答这个问题首先要定义什么是“完美”，如果将白果卡的体验定为完美，那板载网卡几乎不可能完美，如果只是满足基础上网需求，倒是算可用，因当前驱动是从 OpenBSD 平台的 Intel 驱动移植，只能说尽力在做适配和兼容、尽量接近完美，适合要求不高的用户。最优方案仍然是白果卡。
 考虑到板载 Wifi 驱动大佬 @zxystd 发布了 Intel Wi-Fi 驱动的正式版，我在 EFI 做了集成工作，但是默认为关闭状态（因会和白果网卡冲突），如需使用自行按如下方法开启：
 
-* AirportItlwm 版驱动（无需配合 HeliPort 客户端使用）
 1、根据自己当前的 macOS 版本下载 AirportItlwm 驱动（名称格式为 AirportItlwm_驱动版本号_stable_macOS系统代号.kext.zip），地址：https://github.com/OpenIntelWireless/itlwm/releases
 2、将解压出的 AirportItlwm.kext 放入 /EFI/OC/Kexts/ 文件夹。
 3、修改 config.plist，启用注册 AirportItlwm.kext 的代码（搜索“AirportItlwm.kext”，下面几行找到 <key>Enabled</key> 下一行的值 <false/> 改为 <true/>）。
 4、修改 config.plist，搜索“IO80211Family.kext”，下面几行找到 <key>Enabled</key> 下一行的值 <false/> 改为 <true/>
 5、重启电脑。
-
-* itlwm 版驱动（需配合 HeliPort 客户端使用）
-1、下载 itlwm 驱动（名称格式为 itlwm_驱动版本号_stable.kext.zip），地址：https://github.com/OpenIntelWireless/itlwm/releases
-2、将解压出的 itlwm.kext 放入 /EFI/OC/Kexts/ 文件夹。
-3、修改 config.plist，启用注册 itlwm.kext 的代码（搜索“itlwm.kext”，下面几行找到 <key>Enabled</key> 下一行的值 <false/> 改为 <true/>）。
-4、安装板载 Intel Wi-Fi 客户端程序 HeliPort，地址：https://github.com/OpenIntelWireless/HeliPort/releases
-5、重启电脑，运行 HeliPort 程序连接到 Wifi。按下 Option 点击菜单栏的 HeliPort，可将其设置为开机自启。
 
 
 - 开启读卡器驱动（仅适用于【未硬改白果网卡】用户）
@@ -79,8 +70,9 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 - 更新日志（Changelog）：
 
-2021-12-16
-1、解决无法检测到 macOS 12.1 更新的问题。
+2022-01-13
+1、更新 OpenCore 0.7.7 正式版。
+2、例行升级 kext 版本（AppleALC、BlueToolFixup、Lilu、RealtekCardReaderFriend、RestrictEvents、WhateverGreen）。
 
 2021-12-08
 1、更新 OpenCore 0.7.6 正式版。
