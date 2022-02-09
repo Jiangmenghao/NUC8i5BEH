@@ -743,7 +743,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -793,12 +793,12 @@
 				<string>keepsyms=1 brcmfx-country=#a</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
-                <key>ocwv</key>
-                <data>IRII</data>
-                <key>prev-lang:kbd</key>
-                <data>emgtSGFuczoyNTI=</data>
-                <key>run-efi-updater</key>
-                <string>No</string>
+				<key>ocwv</key>
+				<data>IgEo</data>
+				<key>prev-lang:kbd</key>
+				<data>emgtSGFuczoyNTI=</data>
+				<key>run-efi-updater</key>
+				<string>No</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -920,13 +920,13 @@
 			<key>KeyInitialDelay</key>
 			<integer>10</integer>
 			<key>KeySubsequentDelay</key>
-            <integer>5</integer>
-            <key>PointerPollMask</key>
-            <integer>-1</integer>
-            <key>PointerPollMax</key>
-            <integer>80</integer>
-            <key>PointerPollMin</key>
-            <integer>10</integer>
+			<integer>5</integer>
+			<key>PointerPollMask</key>
+			<integer>-1</integer>
+			<key>PointerPollMin</key>
+			<integer>10</integer>
+			<key>PointerPollMax</key>
+			<integer>80</integer>
 			<key>PointerSpeedDiv</key>
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
@@ -938,18 +938,18 @@
 			<integer>0</integer>
 			<key>AudioDevice</key>
 			<string>PciRoot(0x0)/Pci(0x1f,0x3)</string>
-            <key>AudioOutMask</key>
-            <integer>1</integer>
+			<key>AudioOutMask</key>
+			<integer>1</integer>
 			<key>AudioSupport</key>
 			<false/>
-            <key>DisconnectHda</key>
-            <false/>
-            <key>MaximumGain</key>
-            <integer>-15</integer>
-            <key>MinimumAssistGain</key>
-            <integer>-30</integer>
-            <key>MinimumAudibleGain</key>
-            <integer>-55</integer>
+			<key>DisconnectHda</key>
+			<false/>
+			<key>MaximumGain</key>
+			<integer>-15</integer>
+			<key>MinimumAssistGain</key>
+			<integer>-30</integer>
+			<key>MinimumAudibleGain</key>
+			<integer>-55</integer>
 			<key>PlayChime</key>
 			<string>Auto</string>
 			<key>ResetTrafficClass</key>
@@ -1027,8 +1027,8 @@
 			<false/>
 			<key>ProvideConsoleGop</key>
 			<true/>
-            <key>ReconnectGraphicsOnConnect</key>
-            <false/>
+			<key>ReconnectGraphicsOnConnect</key>
+			<false/>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
@@ -1041,8 +1041,8 @@
 			<string>BuiltinGraphics</string>
 			<key>UgaPassThrough</key>
 			<false/>
-            <key>UIScale</key>
-            <integer>0</integer>
+			<key>UIScale</key>
+			<integer>0</integer>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -1091,8 +1091,8 @@
 			<false/>
 			<key>EnableVectorAcceleration</key>
 			<true/>
-            <key>EnableVmx</key>
-            <false/>
+			<key>EnableVmx</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>ForceOcWriteFlash</key>
