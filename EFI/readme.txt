@@ -1,4 +1,4 @@
-- Version：220128
+- Version：220227
 - Maintainer：维奇(weachy)
 - 柔情似水，佳期如梦，忍顾鹊桥归路。
 
@@ -69,6 +69,10 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 - 更新日志（Changelog）：
+
+2022-02-27
+1、更新 OpenCore 0.7.8 正式版。
+2、例行升级 kext 版本（AppleALC、AirportBrcmFixup、Lilu、RestrictEvents）。
 
 2022-01-28
 1、支持检测和升级到 macOS 12.2。
