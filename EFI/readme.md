@@ -1,7 +1,7 @@
 # Nucintosh
-- Version：**220311**
+- Version：**220426**
 - Maintainer：**维奇**[@weachy](https://github.com/weachy)
-- 柔情似水，佳期如梦，忍顾鹊桥归路。
+- [Always love dreams, and be grateful]
 
 如果你想了解更多关于 NUC8ixBE 豆子峡谷黑苹果相关知识，请查阅 [我的文章](https://u.nu/bean)
 If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean
@@ -70,6 +70,11 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 ## 更新日志（Changelog）：
+
+2022-04-26
+1. 更新 OpenCore 0.8.0 正式版。
+2. 例行升级 kext 版本。
+3. 解锁“隔空播放至 Mac”，macOS 12.3 开始[苹果去除了 Mac mini 2018 的该功能](https://support.apple.com/zh-cn/HT204689)。
 
 2022-03-11
 1. 更新 OpenCore 0.7.9 正式版。
