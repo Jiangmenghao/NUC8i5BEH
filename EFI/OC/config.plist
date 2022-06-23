@@ -9,7 +9,7 @@
         <key>#Tips - EN</key>
         <string>If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean</string>
         <key>#Title</key>
-        <string>OpenCore-NUC8-220426</string>
+        <string>OpenCore-NUC8-220622</string>
         <key>ACPI</key>
         <dict>
             <key>Add</key>
@@ -148,7 +148,7 @@
                 <key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
                 <dict>
                     <key>layout-id</key>
-                    <data>DgAAAA==</data>
+                    <integer>88</integer>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
@@ -267,7 +267,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.8</string>
+                    <string>V1.5.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -285,7 +285,7 @@
                     <key>BundlePath</key>
                     <string>AirportBrcmFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.1.4</string>
+                    <string>V2.1.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -303,7 +303,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.1</string>
+                    <string>V1.7.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -429,7 +429,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.1 | Intel Onboard Bluetooth for Monterey</string>
+                    <string>V2.6.2 | Intel Onboard Bluetooth for Monterey</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -718,12 +718,8 @@
             <array/>
             <key>Security</key>
             <dict>
-                <key>AllowNvramReset</key>
-                <true/>
                 <key>AllowSetDefault</key>
                 <true/>
-                <key>AllowToggleSip</key>
-                <false/>
                 <key>ApECID</key>
                 <integer>0</integer>
                 <key>AuthRestart</key>
@@ -803,7 +799,7 @@
                     <key>csr-active-config</key>
                     <data>5wMAAA==</data>
                     <key>ocwv</key>
-                    <data>IgQm</data>
+                    <data>IgYi</data>
                     <key>prev-lang:kbd</key>
                     <data>emgtSGFuczoyNTI=</data>
                     <key>run-efi-updater</key>
@@ -999,6 +995,16 @@
                     <true/>
                     <key>Path</key>
                     <string>OpenCanopy.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>ResetNvramEntry.efi</string>
                 </dict>
             </array>
             <key>Input</key>

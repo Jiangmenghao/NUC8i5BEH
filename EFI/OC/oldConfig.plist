@@ -9,7 +9,7 @@
         <key>#Tips - EN</key>
         <string>If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean</string>
         <key>#Title</key>
-        <string>OpenCore-NUC8-220622</string>
+        <string>OpenCore-NUC8-220615</string>
         <key>ACPI</key>
         <dict>
             <key>Add</key>
@@ -801,7 +801,7 @@
                     <key>csr-active-config</key>
                     <data>5wMAAA==</data>
                     <key>ocwv</key>
-                    <data>IgYi</data>
+                    <data>IgYV</data>
                     <key>prev-lang:kbd</key>
                     <data>emgtSGFuczoyNTI=</data>
                     <key>run-efi-updater</key>

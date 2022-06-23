@@ -1,5 +1,5 @@
 # Nucintosh
-- Version：**220426**
+- Version：**220622**
 - Maintainer：**维奇**[@weachy](https://github.com/weachy)
 - [Always love dreams, and be grateful]
 
@@ -70,6 +70,10 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 ## 更新日志（Changelog）：
+
+2022-06-22
+1. 更新 OpenCore 0.8.1 正式版。
+2. 例行升级 kext 版本（AppleALC、AirportBrcmFixup、BlueToolFixup、WhateverGreen）。
 
 2022-04-26
 1. 更新 OpenCore 0.8.0 正式版。
