@@ -1,5 +1,5 @@
 # Nucintosh
-- Version：**220622**
+- Version：**220628**
 - Maintainer：**维奇**[@weachy](https://github.com/weachy)
 - [Always love dreams, and be grateful]
 
@@ -70,6 +70,9 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 ## 更新日志（Changelog）：
+
+2022-06-28
+1. 修复耳机孔识别不正常的问题。
 
 2022-06-22
 1. 更新 OpenCore 0.8.1 正式版。

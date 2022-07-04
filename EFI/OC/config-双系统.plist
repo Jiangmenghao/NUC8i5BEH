@@ -9,7 +9,7 @@
         <key>#Tips - EN</key>
         <string>If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean</string>
         <key>#Title</key>
-        <string>OpenCore-NUC8-220622</string>
+        <string>OpenCore-NUC8-220628</string>
         <key>ACPI</key>
         <dict>
             <key>Add</key>
@@ -148,7 +148,7 @@
                 <key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
                 <dict>
                     <key>layout-id</key>
-                    <integer>88</integer>
+                    <data>DgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
