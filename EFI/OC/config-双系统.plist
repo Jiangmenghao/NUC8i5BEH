@@ -9,7 +9,7 @@
         <key>#Tips - EN</key>
         <string>If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean</string>
         <key>#Title</key>
-        <string>OpenCore-NUC8-220628</string>
+        <string>OpenCore-NUC8-220805</string>
         <key>ACPI</key>
         <dict>
             <key>Add</key>
@@ -195,7 +195,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.0</string>
+                    <string>V1.6.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -213,7 +213,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.9</string>
+                    <string>V1.3.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -231,7 +231,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.9</string>
+                    <string>V1.3.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -249,7 +249,7 @@
                     <key>BundlePath</key>
                     <string>SMCSuperIO.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.9</string>
+                    <string>V1.3.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -267,7 +267,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.9</string>
+                    <string>V1.6.1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -285,7 +285,7 @@
                     <key>BundlePath</key>
                     <string>AirportBrcmFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.1.5</string>
+                    <string>V2.1.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -303,7 +303,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.2</string>
+                    <string>V1.7.4</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -357,7 +357,7 @@
                     <key>BundlePath</key>
                     <string>NVMeFix.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.9</string>
+                    <string>V1.1.0</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -393,7 +393,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.7</string>
+                    <string>V1.0.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -429,7 +429,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.2 | Intel Onboard Bluetooth for Monterey</string>
+                    <string>V2.6.3 | Intel Onboard Bluetooth for Monterey</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -501,7 +501,7 @@
                     <key>BundlePath</key>
                     <string>RealtekCardReaderFriend.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.2 | Realtek CardReader</string>
+                    <string>V1.0.3 | Realtek CardReader</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -749,6 +749,33 @@
             </dict>
             <key>Serial</key>
             <dict>
+                <key>Custom</key>
+                <dict>
+                    <key>BaudRate</key>
+                    <integer>115200</integer>
+                    <key>ClockRate</key>
+                    <integer>1843200</integer>
+                    <key>DetectCable</key>
+                    <false/>
+                    <key>ExtendedTxFifoSize</key>
+                    <integer>64</integer>
+                    <key>FifoControl</key>
+                    <integer>7</integer>
+                    <key>LineControl</key>
+                    <integer>3</integer>
+                    <key>PciDeviceInfo</key>
+                    <data>/w==</data>
+                    <key>RegisterAccessWidth</key>
+                    <integer>8</integer>
+                    <key>RegisterBase</key>
+                    <integer>1016</integer>
+                    <key>RegisterStride</key>
+                    <integer>1</integer>
+                    <key>UseHardwareFlowControl</key>
+                    <false/>
+                    <key>UseMmio</key>
+                    <false/>
+                </dict>
                 <key>Init</key>
                 <false/>
                 <key>Override</key>
@@ -801,7 +828,7 @@
                     <key>csr-active-config</key>
                     <data>5wMAAA==</data>
                     <key>ocwv</key>
-                    <data>IgYi</data>
+                    <data>IggH</data>
                     <key>prev-lang:kbd</key>
                     <data>emgtSGFuczoyNTI=</data>
                     <key>run-efi-updater</key>
@@ -824,8 +851,6 @@
                     <string>ocwv</string>
                 </array>
             </dict>
-            <key>LegacyEnable</key>
-            <false/>
             <key>LegacyOverwrite</key>
             <false/>
             <key>LegacySchema</key>
@@ -975,6 +1000,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>HfsPlus.efi</string>
                 </dict>
@@ -985,6 +1012,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
                 </dict>
@@ -995,6 +1024,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>OpenCanopy.efi</string>
                 </dict>
@@ -1005,6 +1036,8 @@
                     <string></string>
                     <key>Enabled</key>
                     <true/>
+                    <key>LoadEarly</key>
+                    <false/>
                     <key>Path</key>
                     <string>ResetNvramEntry.efi</string>
                 </dict>

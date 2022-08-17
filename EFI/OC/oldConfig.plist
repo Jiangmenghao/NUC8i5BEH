@@ -665,7 +665,9 @@
         <key>Misc</key>
         <dict>
             <key>BlessOverride</key>
-            <array/>
+            <array>
+                <string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
+            </array>
             <key>Boot</key>
             <dict>
                 <key>ConsoleAttributes</key>
@@ -689,11 +691,11 @@
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
-                <false/>
+                <true/>
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
-                <integer>0</integer>
+                <integer>8</integer>
             </dict>
             <key>Debug</key>
             <dict>
@@ -826,7 +828,7 @@
                     <key>csr-active-config</key>
                     <data>5wMAAA==</data>
                     <key>ocwv</key>
-                    <data>IggH</data>
+                    <data>IggF</data>
                     <key>prev-lang:kbd</key>
                     <data>emgtSGFuczoyNTI=</data>
                     <key>run-efi-updater</key>
