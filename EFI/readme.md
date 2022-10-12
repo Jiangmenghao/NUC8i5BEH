@@ -1,10 +1,13 @@
 # Nucintosh
-- Version：**220807**
+- Version：**220923**
 - Maintainer：**维奇**[@weachy](https://github.com/weachy)
 - [Always love dreams, and be grateful]
 
 如果你想了解更多关于 NUC8ixBE 豆子峡谷黑苹果相关知识，请查阅 [我的文章](https://u.nu/bean)
 If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean
+
+
+* 2022.09: 最近在折腾适合搭配黑苹果使用的无线蓝牙耳机，总结了一篇文章，希望能帮到有相关需求的朋友：[《当黑苹果遇上华强北耳机》](https://zhuanlan.zhihu.com/p/569109027)
 
 
 * 当前引导支持 Mojave、Catalina、Big Sur、Monterey、Ventura（10.14～13.x）。
@@ -71,10 +74,16 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 ## 更新日志（Changelog）：
 
+2022-09-23
+1. 更新 OpenCore 0.8.4 正式版。
+2. 例行升级 kext 版本（AppleALC、CPUFriend、FeatureUnlock）。
+3. 支持升级到 macOS 13 beta（当前最新版本为 Beta8，大概率可以支持秋季的正式版，届时请留意交流群内反馈）。
+* 最近在折腾适合搭配黑苹果使用的无线蓝牙耳机，总结了一篇文章，希望能帮到有相关需求的朋友：[《当黑苹果遇上华强北耳机》](https://zhuanlan.zhihu.com/p/569109027)
+
 2022-08-07
 1. 更新 OpenCore 0.8.3 正式版。
 2. 例行升级 kext 版本（AppleALC、AirportBrcmFixup、BlueToolFixup、FeatureUnlock、Lilu、NVMeFix、RestrictEvents、VirtualSMC、WhateverGreen）。
-3. 支持升级到 macOS 13 beta（当前最近版本为 Beta4，大概率也是可以支持秋季的正式版，届时请留意交流群内反馈）。
+3. 支持升级到 macOS 13 beta（当前最新版本为 Beta4，大概率也是可以支持秋季的正式版，届时请留意交流群内反馈）。
 
 2022-06-28
 1. 修复耳机孔识别不正常的问题。
