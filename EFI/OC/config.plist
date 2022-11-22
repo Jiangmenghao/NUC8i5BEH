@@ -429,7 +429,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.3 | Intel Onboard Bluetooth for Monterey</string>
+                    <string>V2.6.4 | Intel Onboard Bluetooth for Monterey</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -828,7 +828,7 @@
                     <key>csr-active-config</key>
                     <data>5wMAAA==</data>
                     <key>ocwv</key>
-                    <data>Igkj</data>
+                    <data>IhAk</data>
                     <key>prev-lang:kbd</key>
                     <data>emgtSGFuczoyNTI=</data>
                     <key>run-efi-updater</key>

@@ -1,5 +1,5 @@
 # Nucintosh
-- Version：**220923**
+- Version：**221024**
 - Maintainer：**维奇**[@weachy](https://github.com/weachy)
 - [Always love dreams, and be grateful]
 
@@ -7,7 +7,7 @@
 If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean
 
 
-* 2022.09: 最近在折腾适合搭配黑苹果使用的无线蓝牙耳机，总结了一篇文章，希望能帮到有相关需求的朋友：[《当黑苹果遇上华强北耳机》](https://zhuanlan.zhihu.com/p/569109027)
+* 2022.09: 最近折腾适合配合黑果使用的无线蓝牙耳机，总结了一篇文章，希望能帮到有相关需求的朋友： https://zhuanlan.zhihu.com/p/569109027
 
 
 * 当前引导支持 Mojave、Catalina、Big Sur、Monterey、Ventura（10.14～13.x）。
@@ -74,11 +74,16 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 ## 更新日志（Changelog）：
 
+2022-10-24
+1. 更新 OpenCore 0.8.5 正式版。
+2. 例行升级 kext 版本（BlueToolFixup）。
+3. 支持升级到 macOS 13 正式版，欢迎在 NUC 群内交流反馈。
+* 最近在折腾适合搭配黑苹果使用的无线蓝牙耳机，总结了一篇文章，希望能帮到有相关需求的朋友：https://zhuanlan.zhihu.com/p/569109027
+
 2022-09-23
 1. 更新 OpenCore 0.8.4 正式版。
 2. 例行升级 kext 版本（AppleALC、CPUFriend、FeatureUnlock）。
 3. 支持升级到 macOS 13 beta（当前最新版本为 Beta8，大概率可以支持秋季的正式版，届时请留意交流群内反馈）。
-* 最近在折腾适合搭配黑苹果使用的无线蓝牙耳机，总结了一篇文章，希望能帮到有相关需求的朋友：[《当黑苹果遇上华强北耳机》](https://zhuanlan.zhihu.com/p/569109027)
 
 2022-08-07
 1. 更新 OpenCore 0.8.3 正式版。
