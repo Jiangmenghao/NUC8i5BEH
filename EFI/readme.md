@@ -1,5 +1,5 @@
 # Nucintosh
-- Version：**221024**
+- Version：**221213**
 - Maintainer：**维奇**[@weachy](https://github.com/weachy)
 - [Always love dreams, and be grateful]
 
@@ -73,6 +73,10 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 ## 更新日志（Changelog）：
+
+2022-12-13
+1. 更新 OpenCore 0.8.7 正式版。
+2. 例行升级 kext 版本（WhateverGreen、AppleALC、RestrictEvents、FeatureUnlock、RealtekCardReaderFriend、RealtekCardReader）。
 
 2022-10-24
 1. 更新 OpenCore 0.8.5 正式版。
