@@ -1,5 +1,5 @@
 # Nucintosh
-- Version：**221213**
+- Version：**230222**
 - Maintainer：**维奇**[@weachy](https://github.com/weachy)
 - [Always love dreams, and be grateful]
 
@@ -73,6 +73,12 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 ## 更新日志（Changelog）：
+
+2023-02-22
+1. 2023 年第一更：更新 OpenCore 0.8.9 正式版。
+2. 例行升级 kext 版本（Lilu、WhateverGreen、AppleALC、RestrictEvents、FeatureUnlock）。
+3. 修复部分群友反馈睡眠唤醒无法点亮显示器的问题。
+4. 如果在 Ventura 系统出现电脑闲置一段时间后变卡顿，大概率为新系统下的硬盘兼容问题，建议执行此命令 sudo mdutil -a -i off ，重启生效。
 
 2022-12-13
 1. 更新 OpenCore 0.8.7 正式版。
