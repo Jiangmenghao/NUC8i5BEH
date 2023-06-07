@@ -1,7 +1,7 @@
 # Nucintosh
-- Version：**230222**
+- Version：**230417**
 - Maintainer：**维奇**[@weachy](https://github.com/weachy)
-- [Always love dreams, and be grateful]
+- [愿你历经时间，仍是少年]
 
 如果你想了解更多关于 NUC8ixBE 豆子峡谷黑苹果相关知识，请查阅 [我的文章](https://u.nu/bean)
 If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please visit: https://u.nu/bean
@@ -74,11 +74,17 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 ## 更新日志（Changelog）：
 
+2023-04-17
+1. 更新 OpenCore 0.9.1 正式版。
+2. 例行升级 kext 版本（Lilu、VirtualSMC、AirportBrcmFixup、AppleALC、RestrictEvents、FeatureUnlock、BlueToolFixup）。
+3. 优化部分群友反馈睡眠唤醒无法点亮显示器的问题（由于显示器千差万别，以及HDMI2.0接口的历史问题，很难完美兼容所有）。
+
 2023-02-22
 1. 2023 年第一更：更新 OpenCore 0.8.9 正式版。
 2. 例行升级 kext 版本（Lilu、WhateverGreen、AppleALC、RestrictEvents、FeatureUnlock）。
 3. 修复部分群友反馈睡眠唤醒无法点亮显示器的问题。
-4. 如果在 Ventura 系统出现电脑闲置一段时间后变卡顿，大概率为新系统下的硬盘兼容问题，建议执行此命令 sudo mdutil -a -i off ，重启生效。
+4. 解决多系统用户执行 Reset nvram 后，容易丢失 OC 引导的问题。
+5. 如果在 Ventura 系统出现电脑闲置一段时间后变卡顿，大概率为新系统下的硬盘兼容问题，建议执行此命令 sudo mdutil -a -i off ，重启生效。
 
 2022-12-13
 1. 更新 OpenCore 0.8.7 正式版。
