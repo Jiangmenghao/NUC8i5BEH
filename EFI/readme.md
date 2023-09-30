@@ -1,5 +1,5 @@
 # Nucintosh
-- Version：**230417**
+- Version：**230711**
 - Maintainer：**维奇**[@weachy](https://github.com/weachy)
 - [愿你历经时间，仍是少年]
 
@@ -10,7 +10,7 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 * 2022.09: 最近折腾适合配合黑果使用的无线蓝牙耳机，总结了一篇文章，希望能帮到有相关需求的朋友： https://zhuanlan.zhihu.com/p/569109027
 
 
-* 当前引导支持 Mojave、Catalina、Big Sur、Monterey、Ventura（10.14～13.x）。
+* 当前引导支持 Mojave、Catalina、Big Sur、Monterey、Ventura、Sonoma（10.14～14.x）。
 
 
 ## OpenCore 实现双系统引导的说明：
@@ -73,6 +73,11 @@ If you want to learn more about hackintosh with Intel NUC 'Bean Canyon'. Please 
 
 
 ## 更新日志（Changelog）：
+
+2023-07-11
+1. 更新 OpenCore 0.9.3 正式版。
+2. 例行升级 kext 版本（Lilu、VirtualSMC、WhateverGreen、AirportBrcmFixup、AppleALC、RestrictEvents）。
+3. 减少 Ventura 系统下 GPU 负载过大时可能造成的内核崩溃。
 
 2023-04-17
 1. 更新 OpenCore 0.9.1 正式版。
