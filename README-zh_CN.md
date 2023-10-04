@@ -10,7 +10,9 @@
 + macOS Big Sur
 + macOS Monterey
 + macOS Ventura
-+ macOS Sonoma
++ macOS Sonoma（不建议）
+
+如果你已升级到 Sonoma 且有使用 Wi-Fi 的需求，无论是白果博通网卡还是自带的英特尔网卡，请切换到 [sonoma-only](https://github.com/Jiangmenghao/NUC8i5BEH/tree/sonoma-only) 分支
 
 ### 配置
 + 操作系统: macOS Ventura 13.4 22F66 x86_64 / Macmini8,1

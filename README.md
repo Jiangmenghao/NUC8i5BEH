@@ -10,7 +10,9 @@ English | [简体中文](./README-zh_CN.md)
 + macOS Big Sur
 + macOS Monterey
 + macOS Ventura
-+ macOS Sonoma
++ macOS Sonoma (not recommended)
+
+If you've upgraded to Sonoma and have a need for Wi-Fi, either with a Broadcom NIC or the Intel NIC that came with it, switch to the [sonoma-only](https://github.com/Jiangmenghao/NUC8i5BEH/tree/sonoma-only) branch.
 
 ### Config
 + OS: macOS Ventura 13.4 22F66 x86_64 / Macmini8,1
