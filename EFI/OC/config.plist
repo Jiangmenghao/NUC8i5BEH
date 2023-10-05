@@ -1188,6 +1188,13 @@
                 <false/>
             </dict>
             <key>ReservedMemory</key>
+            <key>RtVariables</key>
+                <dict>
+                    <key>CsrActiveConfig</key>
+                    <string>0x67</string>
+                    <key>BooterConfig</key>
+                    <string>0x28</string>
+                </dict>
             <array/>
         </dict>
     </dict>
